@@ -1,16 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Trevent | Головна</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-
+    <header class="header">
+        <div class="container">
+            <div class="header__inner d-flex">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="images/logo.png" alt="Trevent">
+                </a>
+                <div class="header__info">
+                    <div class="header__schedule">
+                        Графік роботи: 09:00-18:00
+                    </div>
+                    <a class="header__phone" href="tel:0988690025">
+                        (098) 86 900 25
+                    </a>
+                    <button class="header__phone-btn"></button>
+                    <div class="header__phone-drop">
+                        <a class="header__phone header__phone--sm" href="tel:0988690026">
+                            (098) 86 900 26
+                        </a>
+                        <a class="header__phone header__phone--sm" href="tel:0988690027">
+                            (098) 86 900 27
+                        </a>
+                    </div>
+                </div>
+                <div class="header__lang">
+                    <div class="header__lang-current d-flex">
+                        <img class="header__lang-flag" src="images/flag-ua.jpg" alt="">
+                        <span class="header__lang-name">ua</span>
+                    </div>
+                    <ul class="header__lang-drop">
+                        <li class="header__lang-item">
+                            <!-- Або я не зрозумів щось, але в макеті не було іконки, тому залишаю flag-ua -->
+                            <a class="header__lang-link d-flex" href="#">
+                                <span class="header__lang-name">en</span>
+                                <img class="header__lang-flag" src="images/flag-ua.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="header__lang-item">
+                            <a class="header__lang-link d-flex" href="#">
+                                <span class="header__lang-name">pl</span>
+                                <img class="header__lang-flag" src="images/flag-pl.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="header__lang-item">
+                            <a class="header__lang-link d-flex" href="#">
+                                <span class="header__lang-name">ru</span>
+                                <img class="header__lang-flag" src="images/flag-ru.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#" class="header__link active">
+                                Головна
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">
+                                Компанія
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link header__link--with-drop">
+                                Продукція
+                            </a>
+                            <ul class="header__nav-drop">
+                                <li class="header__item">
+                                    <a href="#" class="header__link">
+                                        Документація
+                                    </a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="#" class="header__link">
+                                        Питання та відповіді
+                                    </a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="#" class="header__link">
+                                        Відео та мультимедіа
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link header__link--with-drop">
+                                Підтримка                                
+                            </a>
+                            <ul class="header__nav-drop">
+                                <li class="header__item">
+                                    <a href="#" class="header__link">
+                                        Документація
+                                    </a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="#" class="header__link">
+                                        Питання та відповіді
+                                    </a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="#" class="header__link">
+                                        Відео та мультимедіа
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__search"></button>
+            </div>
+        </div>
+    </header>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
