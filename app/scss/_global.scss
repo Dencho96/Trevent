@@ -44,6 +44,34 @@ body {
     display: flex;
 }
 
-.active{
+.active {
     color: $orange;
+}
+
+.btn {
+    padding: 14px 29px 15px 29px;
+    background-color: $orange;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: rgba($orange, 0.7);
+    }
+}
+
+.swiper-pagination{
+    bottom: 14px !important;
+}
+
+.swiper-pagination-bullet {
+    margin: 0 7px !important;
+    width: 12px;
+    height: 12px;
+    background-color: #333;
+    opacity: 1;
+
+    &-active {
+        background-color: $orange;
+    }
 }

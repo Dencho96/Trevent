@@ -71,6 +71,7 @@
 
     &__phone-drop{
         position: absolute;
+        z-index: 10;
         display: none;
         text-align: center;
         top: 50px;
