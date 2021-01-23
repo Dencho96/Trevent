@@ -8,9 +8,20 @@ $( ".header__lang-current" ).click(function() {
     });
 });
 
-var mySwiper = new Swiper('.swiper-container', {
+var heroSlider = new Swiper('.hero__slider', {
     speed: 400,
     spaceBetween: 100,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+    }
+});
+
+var partnersSlider = new Swiper('.partners__slider', {
+    speed: 400,
+    spaceBetween: 100,
+    slidesPerView: 4,
+    loop: "true",
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
