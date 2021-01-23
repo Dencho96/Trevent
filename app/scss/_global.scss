@@ -53,8 +53,11 @@ body {
     padding: 14px 29px 15px 29px;
     background-color: $orange;
     border-radius: 3px;
+    border: none;
     transition: background-color 0.3s;
     text-transform: uppercase;
+    color: white;
+    cursor: pointer;
 
     &:hover {
         background-color: rgba($orange, 0.7);

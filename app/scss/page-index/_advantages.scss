@@ -1,13 +1,13 @@
 .advantages {
-    padding-top: 20px;
-
+        
     &__inner {
         justify-content: space-around;
         max-width: 1328px;
         width: 100%;
-        margin: 0 auto 73px;
-        padding: 0 15px;
+        margin: 0 auto;
+        padding: 0 15px 73px;
         text-align: center;
+        border-bottom: 3px solid #4d4d4d;
     }
 
     &__item {

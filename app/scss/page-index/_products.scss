@@ -1,0 +1,100 @@
+.products {
+    position: relative;
+    padding: 78px 0 76px;
+    text-align: center;
+
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 1298px;
+        width: 100%;
+        height: 2px;
+        background-color: #4d4d4d;
+    }
+
+    &__title {
+        margin-bottom: 48px;
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        margin: 0 auto 55px;
+        max-width: 945px;
+        width: 100%;
+        font-size: 19px;
+        line-height: 32px;
+    }
+
+    &__inner {
+        justify-content: space-between;
+    }
+
+    &__item {
+        position: relative;
+        max-width: 320px;
+        width: 100%;
+        height: 426px;
+        padding: 0 50px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+
+        &:hover .products__info {
+            display: block;
+        }
+
+        &:hover .products__name{
+            display: none;
+        }
+    }
+
+    &__name {
+        font-size: 22px;
+        line-height: 40px;
+        letter-spacing: 4px;
+        font-weight: 900;
+        text-transform: uppercase;
+
+        &--hover{
+            display: block !important;
+            margin-bottom: 21px;
+            font-size: 19px;
+        }
+    }
+
+    &__info {
+        position: absolute;
+        z-index: 10;
+        display: none;
+        padding: 67px 41px 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(black, 0.75);
+    }
+
+    &__icon {
+        margin: 0 auto 28px;
+        width: 63px;
+        height: 64px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__descr{        
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    &__btn{
+        padding: 10px 22px 11px 21px;
+    }
+}
