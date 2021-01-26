@@ -1,10 +1,15 @@
 .hero {
     &__slide {
+        box-sizing: border-box;
         height: 825px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         background-position-y: 25%;
+
+        @include maxw767{
+            height: calc(100vh - 121px);
+        }
     }
 
     &__container{
@@ -14,27 +19,112 @@
 
     &__box {
         position: absolute;
-        right: 191px;
-        bottom: 28%;
-        max-width: 471px;
+        right: 165px;
+        bottom: 28.2%;
+        max-width: 472px;
         width: 100%;
+
+        @include maxw1205{
+            right: 100px;
+        }
+
+        @include maxw767{
+            bottom: 20%;
+            right: 35px;
+            max-width: 450px;
+        }
+
+        @include maxw576{
+            bottom: 18%;
+            max-width: 240px;
+        }
     }
 
     &__name{
-        margin-bottom: 23px;        
+        margin: 0 0 25px -3px;      
         font-size: 69px;
         font-weight: 900;
+        line-height: 77px;
+        letter-spacing: 1.3px;
+
+        @include maxw1205{
+            margin-bottom: 20px;
+            font-size: 60px;
+            line-height: 72px;
+        }
+
+        @include maxw992{
+            font-size: 52px;
+            line-height: 60px;
+        }
+
+        @include maxw767{
+            margin-bottom: 10px;
+            font-size: 38px;
+            line-height: 44px;
+        }
+
+        @include maxw576{
+            font-size: 30px;
+            line-height: 36px;
+        }
     }
 
     &__name-first{
+        display: block;
+        margin: 0 0 -8px 2px;
         text-transform: uppercase;
         font-size: 36px;
         font-weight: 400;
+        line-height: 40px;
+        letter-spacing: 4.3px;
+
+        @include maxw1205{
+            font-size: 32px;
+        }
+
+        @include maxw992{
+            font-size: 28px;
+        }
+        
+        @include maxw767{
+            margin-bottom: 0;
+            font-size: 22px;
+            line-height: 28px;
+        }
+
+        @include maxw576{
+            font-size: 16px;
+            line-height: 22px;
+        }
     }
 
     &__text{
-        margin-bottom: 33px;
+        margin-bottom: 35px;
         font-size: 19px;
         line-height: 32px;
+        letter-spacing: 0.02px;
+
+        @include maxw1205{
+            margin-bottom: 28px;
+        }
+
+        @include maxw992{
+            font-size: 18px;
+            line-height: 30px;
+        }
+        
+        @include maxw767{
+            margin-bottom: 15px;
+        }
+
+        @include maxw576{
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
+    &__link{
+        min-width: 171px;
     }
 }

@@ -11,11 +11,11 @@
     }
 
     &__logo {
-        margin-bottom: 33px;
+        margin: 0 0 29px;
     }
 
     &__nav{
-        margin-bottom: 27px;
+        margin-bottom: 26px;
     }
 
     &__list {
@@ -32,7 +32,7 @@
 
         &--social{
             &+&{
-                margin-left: 14px;
+                margin-left: 10px;
             }
         }
     }
@@ -43,10 +43,22 @@
         &:hover{
             color: $orange;
         }
+
+        &--social{
+            transition: opacity 0.3s;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
     }
 
     &__social{
-        margin-bottom: 29px;
+        margin-bottom: 22px;
+    }
+
+    &__copy{
+        margin-left: -14px;
+        letter-spacing: -0.34px;
     }
     
 }

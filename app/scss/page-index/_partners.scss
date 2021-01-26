@@ -1,6 +1,6 @@
 .partners {
     position: relative;
-    padding: 80px 0 75px;
+    padding: 73px 0 59px;
     text-align: center;
 
     &::before {
@@ -16,9 +16,10 @@
     }
 
     &__title {
-        margin-bottom: 45px;
+        margin-bottom: 29px;
         font-size: 36px;
         font-weight: 700;
+        letter-spacing: 4px;
         text-transform: uppercase;
     }
 
@@ -36,6 +37,7 @@
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;
+        transition: opacity 0.3s;
 
         &--prev {
             margin-right: 25px;
@@ -46,6 +48,10 @@
             margin-left: 25px;
             background-image: url("../images/arrow-right.png");
         }
+
+        &:hover{
+            opacity: 0.7;
+        }
     }
 
     &__slider {
@@ -55,6 +61,10 @@
 
     &__wrapper {
         align-items: center;
+    }
+
+    &__slide{
+        object-fit: none;
     }
 
 }

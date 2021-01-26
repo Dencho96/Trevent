@@ -50,13 +50,16 @@ body {
 }
 
 .btn {
-    padding: 14px 29px 15px 29px;
+    padding: 11px 20px 13px 20px;
     background-color: $orange;
     border-radius: 3px;
     border: none;
     transition: background-color 0.3s;
     text-transform: uppercase;
     color: white;
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 1.2px;
     cursor: pointer;
 
     &:hover {
@@ -64,7 +67,18 @@ body {
     }
 }
 
-.swiper-pagination{
+.logo {
+    margin-right: 10px;
+
+    &__img {
+        @include maxw576 {
+            max-width: 200px;
+            width: 100%;
+        }
+    }
+}
+
+.swiper-pagination {
     bottom: 14px !important;
 }
 
