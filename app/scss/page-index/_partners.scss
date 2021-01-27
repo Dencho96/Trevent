@@ -15,12 +15,20 @@
         background-color: #4d4d4d;
     }
 
+    @include maxw767{
+        padding: 45px 0 51px;
+    }
+
     &__title {
         margin-bottom: 29px;
         font-size: 36px;
         font-weight: 700;
         letter-spacing: 4px;
         text-transform: uppercase;
+
+        @include maxw576{
+            font-size: 26px;
+        }
     }
 
     &__inner {
@@ -49,7 +57,7 @@
             background-image: url("../images/arrow-right.png");
         }
 
-        &:hover{
+        &:hover {
             opacity: 0.7;
         }
     }
@@ -63,8 +71,14 @@
         align-items: center;
     }
 
-    &__slide{
-        object-fit: none;
+    &__slide {
+        object-fit: scale-down;
+        filter: grayscale(100%);
+        transition: filter 0.2s;
+
+        &:hover {
+            filter: grayscale(0);
+        }
     }
 
 }

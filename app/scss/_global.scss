@@ -93,3 +93,37 @@ body {
         background-color: $orange;
     }
 }
+
+.scroll-top {
+    position: fixed;
+    z-index: 20;
+    bottom: 53px;
+    right: 242px;
+    display: none;
+    width: 41px;
+    height: 41px;
+    border-radius: 4px;
+    background-color: $orange;
+    border: none;
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 12px;
+        background-image: url("../images/arrow-up.png");
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover{
+        opacity: 0.7;
+    }
+
+    @include maxw1400{
+        right: 50px;
+        bottom: 85px;
+    }
+}

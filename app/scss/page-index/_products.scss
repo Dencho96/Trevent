@@ -19,12 +19,24 @@
         background-color: #4d4d4d;
     }
 
+    @include maxw767{
+        padding: 45px 0 51px;
+    }
+
     &__title {
         margin-bottom: 41px;
         font-size: 36px;
         letter-spacing: 4px;
         font-weight: 700;
         text-transform: uppercase;
+
+        @include maxw1205{
+            margin-bottom: 30px;
+        }
+
+        @include maxw576{
+            font-size: 26px;
+        }
     }
 
     &__text {
@@ -34,10 +46,25 @@
         font-size: 19px;
         line-height: 32px;
         letter-spacing: 0.4px;
+
+        @include maxw1205 {
+            max-width: 850px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        @include maxw992{
+            max-width: 730px;
+        }
     }
 
     &__inner {
         justify-content: space-between;
+
+        @include maxw992{
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
     }
 
     &__item {
@@ -57,6 +84,26 @@
         &:hover .products__name{
             display: none;
         }
+
+        &+&{
+            margin-left: 15px;
+            @include maxw992{
+                margin-left: 0;
+            }
+        }
+
+        @include maxw1400{
+            padding: 159px 18px 0;
+        }
+
+        @include maxw992{
+            margin-bottom: 25px;
+            max-width: 40%;
+        }
+
+        @include maxw767{
+            max-width: 80%;
+        }
     }
 
     &__name {
@@ -72,6 +119,12 @@
             font-size: 19px;
             letter-spacing: 0.92px;
         }
+        
+        @include maxw1400 {
+            letter-spacing: 2px;
+            font-size: 22px;
+            line-height: 32px;
+        }
     }
 
     &__info {
@@ -84,6 +137,14 @@
         right: 0;
         bottom: 0;
         background-color: rgba(black, 0.75);
+
+        @include maxw1400{
+            padding: 40px 28px 0;
+        }
+
+        @include maxw992{
+            padding: 30px 15px 0;
+        }
     }
 
     &__icon {
