@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trevent | Головна</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner d-flex">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="images/logo.png" alt="Trevent">
+                </a>
+
+                <div class="header__box d-flex">
+                    <div class="header__info">
+                        <div class="header__schedule">
+                            Графік роботи: 09:00-18:00
+                        </div>
+                        <a class="header__phone" href="tel:0988690025">
+                            (098) 86 900 25
+                        </a>
+                        <button class="header__phone-btn"></button>
+                        <div class="header__phone-drop">
+                            <a class="header__phone header__phone--sm" href="tel:0988690026">
+                                (098) 86 900 26
+                            </a>
+                            <a class="header__phone header__phone--sm" href="tel:0988690027">
+                                (098) 86 900 27
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__lang">
+                        <div class="header__lang-current d-flex">
+                            <img class="header__lang-flag" src="images/flag-ua.jpg" alt="">
+                            <span class="header__lang-name">ua</span>
+                        </div>
+                        <ul class="header__lang-drop">
+                            <li class="header__lang-item">
+                                <!-- Або я не зрозумів щось, але в макеті не було іконки, тому залишаю flag-ua -->
+                                <a class="header__lang-link d-flex" href="#">
+                                    <span class="header__lang-name">en</span>
+                                    <img class="header__lang-flag" src="images/flag-ua.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="header__lang-item">
+                                <a class="header__lang-link d-flex" href="#">
+                                    <span class="header__lang-name">pl</span>
+                                    <img class="header__lang-flag" src="images/flag-pl.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="header__lang-item">
+                                <a class="header__lang-link d-flex" href="#">
+                                    <span class="header__lang-name">ru</span>
+                                    <img class="header__lang-flag" src="images/flag-ru.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="#" class="header__link active">
+                                    Головна
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">
+                                    Компанія
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link header__link--with-drop">
+                                    Продукція
+                                </a>
+                                <ul class="header__nav-drop">
+                                    <li class="header__item">
+                                        <a href="#" class="header__link">
+                                            Продукція 1
+                                        </a>
+                                    </li>
+                                    <li class="header__item">
+                                        <a href="#" class="header__link">
+                                            Продукція 2
+                                        </a>
+                                    </li>
+                                    <li class="header__item">
+                                        <a href="#" class="header__link">
+                                            Продукція 3
+                                        </a>
+                                    </li>
+                                    <li class="header__item">
+                                        <a href="#" class="header__link">
+                                            Продукція 4
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link header__link--with-drop">
+                                    Підтримка
+                                </a>
+                                <ul class="header__nav-drop">
+                                    <li class="header__item">
+                                        <a href="#" class="header__link">
+                                            Документація
+                                        </a>
+                                    </li>
+                                    <li class="header__item">
+                                        <a href="#" class="header__link">
+                                            Питання та відповіді
+                                        </a>
+                                    </li>
+                                    <li class="header__item">
+                                        <a href="#" class="header__link">
+                                            Відео та мультимедіа
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">
+                                    Контакти
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__search"></button>
+                </div>
+
+
+                
+
+
+                <button class="hamburger hamburger--collapse header__menu" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner header__menu-inner"></span>
+                    </span>
+                </button>  
+            </div>
+            <div class="container header__wrapper">
+                <form class="header__search-form" action="#">
+                    <label class="header__label">
+                        Пошук
+                        <input type="text" class="header__input" placeholder="Введіть запит">
+                    </label>
+                    <button class="header__search-submit">Пошук</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        
+        <section class="hero">
+            <div class="swiper-container hero__slider">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide hero__slide" style="background-image: url('images/hero-1.jpg');">
+                        <div class="container hero__container">
+                            <div class="hero__box">
+                                <div class="hero__name">
+                                    <span class="hero__name-first">
+                                        Промислове
+                                    </span>
+                                    Кліматичне Обладнання
+                                </div>
+                                <p class="hero__text">
+                                    Працює з кращими постачальниками комплектуючих
+                                    з усього світу, розробляє обладнання стандартного і
+                                    не стандартного виконання.
+                                </p>
+                                <a class="btn hero__link" href="#">
+                                    Детальніше
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide hero__slide" style="background-image: url('images/hero-1.jpg');">
+                        <div class="container hero__container">
+                            <div class="hero__box">
+                                <div class="hero__name">
+                                    <span class="hero__name-first">
+                                        Промислове
+                                    </span>
+                                    Кліматичне Обладнання
+                                </div>
+                                <p class="hero__text">
+                                    Працює з кращими постачальниками комплектуючих
+                                    з усього світу, розробляє обладнання стандартного і
+                                    не стандартного виконання.
+                                </p>
+                                <a class="btn hero__link" href="#">
+                                    Детальніше
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide hero__slide" style="background-image: url('images/hero-1.jpg');">
+                        <div class="container hero__container">
+                            <div class="hero__box">
+                                <div class="hero__name">
+                                    <span class="hero__name-first">
+                                        Промислове
+                                    </span>
+                                    Кліматичне Обладнання
+                                </div>
+                                <p class="hero__text">
+                                    Працює з кращими постачальниками комплектуючих
+                                    з усього світу, розробляє обладнання стандартного і
+                                    не стандартного виконання.
+                                </p>
+                                <a class="btn hero__link" href="#">
+                                    Детальніше
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide hero__slide" style="background-image: url('images/hero-1.jpg');">
+                        <div class="container hero__container">
+                            <div class="hero__box">
+                                <div class="hero__name">
+                                    <span class="hero__name-first">
+                                        Промислове
+                                    </span>
+                                    Кліматичне Обладнання
+                                </div>
+                                <p class="hero__text">
+                                    Працює з кращими постачальниками комплектуючих
+                                    з усього світу, розробляє обладнання стандартного і
+                                    не стандартного виконання.
+                                </p>
+                                <a class="btn hero__link" href="#">
+                                    Детальніше
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination hero__pagination"></div>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="advantages__inner d-flex">
+                <div class="advantages__item">
+                    <div class="advantages__icon" style="background-image: url('images/icons/advantages-1.png');"></div>
+                    <div class="advantages__title">
+                        Якість
+                    </div>
+                    <p class="advantages__text">
+                        Обладнання складається
+                        з комплектуючих
+                        європейського рівня.
+                    </p>
+                </div>
+
+                <div class="advantages__item">
+                    <div class="advantages__icon" style="background-image: url('images/icons/advantages-2.png');"></div>
+                    <div class="advantages__title">
+                        Гарантія
+                    </div>
+                    <p class="advantages__text">
+                        Продукти Trevent мають
+                        24 місяці гарантії.
+                    </p>
+                </div>
+
+                <div class="advantages__item">
+                    <div class="advantages__icon" style="background-image: url('images/icons/advantages-3.png');"></div>
+                    <div class="advantages__title">
+                        Підтримка
+                    </div>
+                    <p class="advantages__text">
+                        Кваліфікований персонал
+                        завжди готовий допомогти.
+                    </p>
+                </div>
+
+                <div class="advantages__item">
+                    <div class="advantages__icon" style="background-image: url('images/icons/advantages-4.png');"></div>
+                    <div class="advantages__title">
+                        Технологія
+                    </div>
+                    <p class="advantages__text">
+                        Використовуються сучасні
+                        технології та матеріали.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container">
+                <div class="products__title">
+                    Продукція
+                </div>
+                <p class="products__text">
+                    Використання електрики в якості джерела нагріву отримало свою популярність в деяких випадках. Такі
+                    рішення застосовують для реалізації системи опалення в умовах, де немає можливості підключення
+                    традиційного теплоносія (води) або де системи опалення планується використовувати тимчасово.
+                </p>
+                <div class="products__inner d-flex">
+
+                    <div class="products__item" style="background-image: url('images/products-1.jpg');">
+                        <div class="products__name">
+                            Електричний нагрів
+                        </div>
+                        <div class="products__info">
+                            <div class="products__icon"
+                                style="background-image: url('images/icons/products-icon-1.png');"></div>
+                            <div class="products__name products__name--hover">
+                                Електричний нагрів
+                            </div>
+                            <p class="products__descr">
+                                Використання електрики в якості
+                                джерела нагріву отримало власну
+                                популярність в деяких випадках.
+                            </p>
+                            <button class="btn products__btn">
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="products__item" style="background-image: url('images/products-2.jpg');">
+                        <div class="products__name">
+                            Водяні теплоносії
+                        </div>
+                        <div class="products__info">
+                            <div class="products__icon"
+                                style="background-image: url('images/icons/products-icon-1.png');"></div>
+                            <div class="products__name products__name--hover">
+                                Водяні теплоносії
+                            </div>
+                            <p class="products__descr">
+                                Використання електрики в якості
+                                джерела нагріву отримало власну
+                                популярність в деяких випадках.
+                            </p>
+                            <button class="btn products__btn">
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="products__item" style="background-image: url('images/products-3.jpg');">
+                        <div class="products__name">
+                            Повітряні завіси
+                        </div>
+                        <div class="products__info">
+                            <div class="products__icon"
+                                style="background-image: url('images/icons/products-icon-1.png');"></div>
+                            <div class="products__name products__name--hover">
+                                Повітряні завіси
+                            </div>
+                            <p class="products__descr">
+                                Використання електрики в якості
+                                джерела нагріву отримало власну
+                                популярність в деяких випадках.
+                            </p>
+                            <button class="btn products__btn">
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="products__item" style="background-image: url('images/products-4.jpg');">
+                        <div class="products__name">
+                            Камери припливу
+                        </div>
+                        <div class="products__info">
+                            <div class="products__icon"
+                                style="background-image: url('images/icons/products-icon-1.png');"></div>
+                            <div class="products__name products__name--hover">
+                                Камери припливу
+                            </div>
+                            <p class="products__descr">
+                                Використання електрики в якості
+                                джерела нагріву отримало власну
+                                популярність в деяких випадках.
+                            </p>
+                            <button class="btn products__btn">
+                                Детальніше
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="partners">
+            <div class="container">
+                <div class="partners__title">
+                    Нам довіряють
+                </div>
+                <div class="partners__inner d-flex">
+                    <button class="partners__btn partners__btn--prev"></button>
+
+                    <div class="swiper-container partners__slider">
+                        <div class="swiper-wrapper partners__wrapper">
+                            <img class="swiper-slide partners__slide" src="images/partners-1.png" alt="">
+                            <img class="swiper-slide partners__slide" src="images/partners-2.png" alt="">
+                            <img class="swiper-slide partners__slide" src="images/partners-3.png" alt="">
+                            <img class="swiper-slide partners__slide" src="images/partners-4.png" alt="">
+                        </div>
+                    </div>
+
+                    <button class="partners__btn partners__btn--next"></button>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <a class="logo footer__logo" href="#">
+                <img class="logo__img" src="images/logo-footer.png" alt="Trevent">
+            </a>
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Компанія
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Продукція
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Рішеня
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Підтримка
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Питання та відповіді
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Контакти
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="footer__social">
+                <li class="footer__item footer__item--social">
+                    <a href="#" class="footer__link footer__link--social">
+                        <img class="footer__icon" src="images/icons/facebook.png" alt="Trevent facebook">
+                    </a>
+                </li>
+                <li class="footer__item footer__item--social">
+                    <a href="#" class="footer__link footer__link--social">
+                        <img class="footer__icon" src="images/icons/youtube.png" alt="Trevent youtube">
+                    </a>
+                </li>
+            </ul>
+            <p class="footer__copy">
+                © TREVENT, 2019. Дизайн розробляли ONCA
+            </p>
+        </div>
+
+    </footer>
+
+    <button class="scroll-top"></button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
